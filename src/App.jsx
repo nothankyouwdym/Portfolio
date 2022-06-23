@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom"
 import Navbar from "./Navbar"
-import Sqaure from "./Sqaure"
 
 const App = () =>{
   return(
     <section>
       <Navbar />
+      <Outlet />
     </section>
   )
 }
