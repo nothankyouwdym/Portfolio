@@ -413,8 +413,8 @@ html {
 
 body {
   font-family: cursive,cursive;
-  color: grey;
-  background: white;
+  color: ghostwhite;
+  background: grey;
   font-size: 1rem;
 }
 
@@ -443,7 +443,7 @@ h5 {
   font-weight: 600;
   font-family: cursive,cursive;
   line-height: 1.2;
-  color: gray;
+  color: darkgray;
 }
 
 h1:not(:first-child),
