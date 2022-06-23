@@ -61,10 +61,14 @@ nav{
   background: #404040;
   margin-inline: 1rem;
   padding-inline: 1rem;
+  border: 1px solid green;
+  border-radius: 100rem;
   align-self: center;
   text-align: center;
   margin: 10px;
-  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  position: relative;
 }
 
 /**

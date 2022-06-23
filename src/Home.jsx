@@ -1,3 +1,5 @@
+import Sqaure from "./Sqaure"
+
 const Home = () =>{
   return(
     <section>
@@ -10,8 +12,6 @@ const Home = () =>{
           </em>
         </strong>
       </p>
-
-      <div id="circle"></div>
     </section>
   )
 }
