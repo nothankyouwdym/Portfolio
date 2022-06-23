@@ -57,6 +57,16 @@ nav{
   margin: 10px;
 }
 
+#circle{
+  background: #404040;
+  margin-inline: 1rem;
+  padding-inline: 1rem;
+  align-self: center;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */

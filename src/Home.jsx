@@ -10,6 +10,8 @@ const Home = () =>{
           </em>
         </strong>
       </p>
+
+      <div id="circle"></div>
     </section>
   )
 }
