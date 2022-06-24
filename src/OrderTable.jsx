@@ -16,9 +16,9 @@ const OrderTable = (props) =>{
 const TBody = (props) =>{
   return(
     <tbody>
-    {props.props.state.map((row) =>{
+    {props.props.state.map((row,index) =>{
       return(
-        <tr>
+        <tr key={index}>
           <th>{row}</th>
         </tr>
       )
@@ -32,6 +32,7 @@ const THead = () =>{
       <thead>
       <tr>
         <th>Food</th>
+        <th>Delete</th>
       </tr>
     </thead>
   )

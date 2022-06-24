@@ -11,7 +11,7 @@ class Order extends Component{
       <h1>Order</h1>
 
       <form>
-        <label htmlFor="nah">Add items to your cart</label>
+        <label htmlFor="nah">Add items to your cart. Refresh to remove all items and restart.(Deselecting won't be an option due to how much is in each pack and that you would probably not need that much food. Also it's just clicking.)</label>
 
         <select id="nah" onClick={this.handleChange} multiple>
           <option value="Chicken Nuggets">Chicken Nuggets</option>
