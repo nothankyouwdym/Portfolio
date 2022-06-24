@@ -19,6 +19,7 @@ class Order extends Component{
           <option vale="Pizza">Pizza</option>
           <option value="Fries">Fries</option>
           <option value="Mariama Secret Special">Mariama Secret Special</option>
+          <option value="Hot Dogs">Hot Dogs</option>
         </select>
       </form>
       <OrderTable state={this.state.item}/>

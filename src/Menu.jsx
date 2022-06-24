@@ -56,6 +56,12 @@ const TBody = () =>{
         <th>1</th>
         <th>7-10</th>
       </tr>
+      <tr>
+        <th>Hot Dogs</th>
+        <th>$8.25</th>
+        <th>4</th>
+        <th>4</th>
+      </tr>
     </tbody>
   )
 }
