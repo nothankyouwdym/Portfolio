@@ -8,7 +8,7 @@ const OrderTable = (props) =>{
         <TBody props={props}/>
       </table>
 
-      <button><Link to="/Ordered">Order</Link></button>
+      <button><Link to="/Ordered" id="link">Order</Link></button>
     </section>  
   )
 }
