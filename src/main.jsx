@@ -7,6 +7,7 @@ import About from './About'
 import Contact from "./Contact"
 import Home from './Home'
 import Menu from './Menu'
+import Order from './Order'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="About" element={<About />}></Route>
             <Route path="Contact" element={<Contact />}></Route>
             <Route path="Menu" element={<Menu />}></Route>
+            <Route path="Order" element={<Order />}></Route>
             <Route path="/" element={<Home />}></Route>
           </Route>
         </Routes>
