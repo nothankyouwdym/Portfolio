@@ -8,6 +8,7 @@ import Contact from "./Contact"
 import Home from './Home'
 import Menu from './Menu'
 import Order from './Order'
+import Ordered from './Ordered'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="Contact" element={<Contact />}></Route>
             <Route path="Menu" element={<Menu />}></Route>
             <Route path="Order" element={<Order />}></Route>
+            <Route path="Ordered" element={<Ordered />}></Route>
             <Route path="/" element={<Home />}></Route>
           </Route>
         </Routes>

@@ -1,11 +1,15 @@
-
+import {Link} from "react-router-dom"
 
 const OrderTable = (props) =>{
   return(
-    <table>
-      <THead />
-      <TBody props={props}/>
-    </table>
+    <section>
+      <table>
+        <THead />
+        <TBody props={props}/>
+      </table>
+
+      <button><Link to="/Ordered">Order</Link></button>
+    </section>  
   )
 }
 
