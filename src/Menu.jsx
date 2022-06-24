@@ -50,6 +50,12 @@ const TBody = () =>{
         <th>20</th>
         <th>3</th>
       </tr>
+      <tr>
+        <th>Mariama Secret Speical(Mint Ice cream and Pancakes)</th>
+        <th>$10.00</th>
+        <th>1</th>
+        <th>7-10</th>
+      </tr>
     </tbody>
   )
 }
