@@ -16,9 +16,6 @@ const TBody = (props) =>{
       return(
         <tr>
           <th>{row}</th>
-        </tr>,
-        <tr>
-          <th>{if()}</th>
         </tr>
       )
     })}
@@ -31,7 +28,6 @@ const THead = () =>{
       <thead>
       <tr>
         <th>Food</th>
-        <th>Price</th>
       </tr>
     </thead>
   )
