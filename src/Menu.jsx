@@ -62,6 +62,12 @@ const TBody = () =>{
         <th>4</th>
         <th>4</th>
       </tr>
+      <tr>
+        <th>Oumar Special Food(Hamburger, Chicken Nuggets, Fries)</th>
+        <th>$15.99</th>
+        <th>1</th>
+        <th>7-10</th>
+      </tr>
     </tbody>
   )
 }
