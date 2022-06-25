@@ -48,25 +48,25 @@ const THead = () =>{
 const getPrices = (row) =>{
   switch(row){
     case cn:
-      return "$10.00"
+      return 10.00
       break
       case ct:
-        return "$5.99"
+        return 5.99
         break
         case p:
-          return "$9.95"
+          return 9.95
           break
           case f:
-            return "$9.99"
+            return 9.99
             break
             case mss:
-              return "$10.00"
+              return 10.00
               break
               case hd:
-                return "$8.25"
+                return 8.25
                 break
                 case osf:
-                  return "$15.99"
+                  return 15.99
                   break  
   }
 }
