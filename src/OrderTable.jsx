@@ -39,7 +39,9 @@ const THead = () =>{
 const Deselect = (rows,index) =>{
   return(
     rows.filter((element,i) =>{
-      return i !== index
+      return(
+        element != element[index]
+      )
     })
   )
 }
