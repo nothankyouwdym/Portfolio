@@ -14,17 +14,16 @@ const OrderTable = (props) =>{
 }
 
 const TBody = (props) =>{
-  return(
-    <tbody>
-    {props.props.state.map((row,index) =>{
+    const rows =  props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
           <th>{row}</th>
+          <th><button onClick={Deselect(rows,index)}>Delete</button></th>
         </tr>
       )
-    })}
-  </tbody>
-  )  
+    })
+    
+    return <tbody>rows</tbody>
 }
 
 const THead = () =>{
@@ -32,8 +31,17 @@ const THead = () =>{
       <thead>
       <tr>
         <th>Food</th>
+        <th>Delete</th>
       </tr>
     </thead>
+  )
+}
+
+const Deselect = (rows,index) =>{
+  return(
+    rows.filter((element,index) =>{
+      return element !== index
+    })
   )
 }
 
