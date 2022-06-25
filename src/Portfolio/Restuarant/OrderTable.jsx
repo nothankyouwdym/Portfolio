@@ -18,7 +18,7 @@ const TBody = (props) =>{
       return(
         <tr key={index}>
           <th>{row}</th>
-          <th><button onClick={Deselect(rows,index)}>Delete</button></th>
+          <th><button>Delete</button></th>
         </tr>
       )
     })
@@ -34,14 +34,6 @@ const THead = () =>{
         <th>Delete</th>
       </tr>
     </thead>
-  )
-}
-
-const Deselect = (rows,index) =>{
-  return(
-    rows.filter((element,i) =>{
-      return element !== index
-    })
   )
 }
 
