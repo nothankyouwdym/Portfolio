@@ -29,7 +29,6 @@ const THead = () =>{
       <thead>
       <tr>
         <th>Food</th>
-        <th>Delete</th>
       </tr>
     </thead>
   )
