@@ -17,7 +17,7 @@ const OrderTable = (props) =>{
         <THead />
         <TBody props={props}/>
       </table>
-      <button><Link to="/Ordered" id="link">Oyyikrder</Link></button>
+      <button><Link to="/Ordered" id="link">Order</Link></button>
     </section>  
   )
 }
@@ -70,5 +70,6 @@ const getPrices = (row) =>{
                   break  
   }
 }
+
 
 export default OrderTable
