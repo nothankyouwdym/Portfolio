@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import {useEffect} from "react"
 
 const cn = "Chicken Nuggets"
 const ct  = "Chicken Tenders"
@@ -8,10 +9,16 @@ const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
 const price
+const total
 
 
 
 const OrderTable = (props) =>{
+  useEffect(() =>{
+    total += price
+  },price)
+
+
   return(
     <section>
       <table>
@@ -19,6 +26,7 @@ const OrderTable = (props) =>{
         <TBody props={props}/>
       </table>
       <button><Link to="/Ordered" id="link">Order</Link></button>
+      <div>{total}</div>
     </section>  
   )
 }
