@@ -52,7 +52,7 @@ const TBody = () =>{
       </tr>
       <tr>
         <th>Mariama Secret Speical(Mint Ice cream and Pancakes)</th>
-        <th>$10.00</th>
+        <th>$15.99</th>
         <th>1</th>
         <th>7-10</th>
       </tr>
