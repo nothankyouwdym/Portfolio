@@ -21,12 +21,12 @@ const OrderTable = (props) =>{
 
   return(
     <section>
-      <h1>{total}</h1>
       <table>
         <THead />
         <TBody props={props}/>
       </table>
       <button><Link to="/Ordered" id="link">Order</Link></button>
+      <button>{total}</button>
     </section>  
   )
 }
