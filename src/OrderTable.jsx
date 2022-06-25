@@ -23,11 +23,12 @@ const OrderTable = (props) =>{
 }
 
 const TBody = (props) =>{
+      const price;
      const rows = props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
-          <td>{getPrices(row)}</td>
+          <td>{price = getPrices(row)}</td>
         </tr>
       )
     })
