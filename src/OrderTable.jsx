@@ -41,6 +41,7 @@ const THead = () =>{
       <tr>
         <th>Food</th>
         <th>Price</th>
+        <th>Full Price</th>
       </tr>
     </thead>
   )
