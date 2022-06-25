@@ -18,7 +18,7 @@ const TBody = (props) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
-          
+          <td><button onClick={Deselect(rows,index)}>Deselect</button></td>
         </tr>
       )
     })
