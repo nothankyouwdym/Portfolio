@@ -17,8 +17,8 @@ const OrderTable = (props) =>{
         <THead />
         <TBody props={props}/>
       </table>
-      <h1>Total Price: {rows}</h1>
       <button><Link to="/Ordered" id="link">Order</Link></button>
+      <h1>Heyy</h1>
     </section>  
   )
 }
