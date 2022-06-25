@@ -19,8 +19,8 @@ const TBody = (props) =>{
     {props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
-          <th>{row}</th>
-          <th>{index}</th>
+          <td>{row}</td>
+          <td>{index}</td>
         </tr>
       )
     })}
