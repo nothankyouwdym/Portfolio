@@ -17,7 +17,7 @@ const OrderTable = (props) =>{
         <THead />
         <TBody props={props}/>
       </table>
-      <button><Link to="/Ordered" id="link">Order</Link></button>
+      <button><Link to="/Ordered" id="link">Orddder</Link></button>
       <div>Nahhhhhhhh</div>
     </section>  
   )
