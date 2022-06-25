@@ -48,7 +48,7 @@ const THead = () =>{
 const getPrices = (row) =>{
   switch(row){
     case cn:
-      return 10.00
+      return 10.25
       break
       case ct:
         return 5.99

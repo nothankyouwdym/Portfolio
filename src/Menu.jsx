@@ -28,7 +28,7 @@ const TBody = () =>{
     <tbody>
       <tr>
         <th>Chicken Nuggets</th>
-        <th>$10.00</th>
+        <th>$10.25</th>
         <th>20</th>
         <th>10</th>
       </tr>
