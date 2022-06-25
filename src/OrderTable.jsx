@@ -7,6 +7,7 @@ const f = "Fries"
 const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
+const price
 
 
 
@@ -23,7 +24,6 @@ const OrderTable = (props) =>{
 }
 
 const TBody = (props) =>{
-      const price;
      const rows = props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
