@@ -23,7 +23,7 @@ const TBody = (props) =>{
       )
     })
     
-    return <tbody>rows</tbody>
+    return <tbody>{rows}</tbody>
 }
 
 const THead = () =>{
