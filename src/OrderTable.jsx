@@ -8,6 +8,7 @@ const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
 
+const rows;
 
 const OrderTable = (props) =>{
   return(
@@ -16,14 +17,14 @@ const OrderTable = (props) =>{
         <THead />
         <TBody props={props}/>
       </table>
-
+      <h1>Total Price: {rows}</h1>
       <button><Link to="/Ordered" id="link">Order</Link></button>
     </section>  
   )
 }
 
 const TBody = (props) =>{
-    const rows = props.props.state.map((row,index) =>{
+     rows = props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
