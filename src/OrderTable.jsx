@@ -8,8 +8,8 @@ const f = "Fries"
 const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
-let price
-let total
+let price = 0
+let total = 0.00
 
 
 
