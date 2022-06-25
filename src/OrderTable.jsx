@@ -21,7 +21,7 @@ const OrderTable = (props) =>{
 
   return(
     <section>
-      <h1>Order</h1>
+      <h1>Orrrrrrder</h1>
       <table>
         <THead />
         <TBody props={props}/>
