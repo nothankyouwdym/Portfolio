@@ -18,7 +18,7 @@ const TBody = (props) =>{
       return(
         <tr key={index}>
           <th>{row}</th>
-          <th><button>Delete</button></th>
+          <th>{index}</th>
         </tr>
       )
     })
