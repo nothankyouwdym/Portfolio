@@ -28,7 +28,7 @@ const TBody = (props) =>{
         <tr key={index}>
           <td>{row}</td>
           <td>{getPrices(row)}</td>
-          <td>{getTotalPrice(row)}</td>
+          <td>{getTotalPrice(rows)}</td>
         </tr>
       )
     })
@@ -41,7 +41,7 @@ const THead = () =>{
       <tr>
         <th>Food</th>
         <th>Price</th>
-        <th>Full Price</th>
+        <th>Full Prices</th>
       </tr>
     </thead>
   )
@@ -73,8 +73,8 @@ const getPrices = (row) =>{
   }
 }
 
-const getTotalPrice = (row) =>{
-  return row[1]
+const getTotalPrice = (rows) =>{
+  return rows[1]
 }
 
 
