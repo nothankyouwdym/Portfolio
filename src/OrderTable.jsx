@@ -74,7 +74,7 @@ const getPrices = (row) =>{
 }
 
 const getTotalPrice = (rows) =>{
-  return rows[1]
+  return rows[1][3]
 }
 
 
