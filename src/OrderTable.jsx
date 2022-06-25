@@ -14,12 +14,14 @@ const total
 
 
 const OrderTable = (props) =>{
-
+  useEffect(() =>{
+    total += price
+  },price)
 
 
   return(
     <section>
-      <h1>Orrrrrrder</h1>
+      <h1>{total}</h1>
       <table>
         <THead />
         <TBody props={props}/>
