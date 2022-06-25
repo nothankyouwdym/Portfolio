@@ -40,7 +40,7 @@ const Deselect = (rows,index) =>{
   return(
     rows.filter((element,i) =>{
       return(
-        element != element[index]
+        element[i] != element[index]
       )
     })
   )
