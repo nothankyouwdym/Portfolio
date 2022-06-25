@@ -20,6 +20,7 @@ const TBody = (props) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
+          <td>{index}</td>
         </tr>
       )
     })}
