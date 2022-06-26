@@ -16,7 +16,7 @@ const OrderTable = (props) =>{
 
   useEffect(() =>{
     setTotalPrice(price)
-  },price)
+  },[price])
 
 
   return(
