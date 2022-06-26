@@ -8,14 +8,14 @@ const f = "Fries"
 const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
-let price = 0
-let total = 0
+let price = 0.00
+let total = 0.00
 
 
 
 const OrderTable = (props) =>{
   useEffect(() =>{
-    total += price
+    total =+ price
   },price)
 
 
@@ -57,25 +57,25 @@ const THead = () =>{
 const getPrices = (row) =>{
   switch(row){
     case cn:
-      return 10
+      return 10.25
       break
       case ct:
-        return 5
+        return 5.54
         break
         case p:
-          return 9
+          return 9.82
           break
           case f:
-            return 9
+            return 9.99
             break
             case mss:
-              return 15
+              return 15.99
               break
               case hd:
-                return 8
+                return 8.46
                 break
                 case osf:
-                  return 15
+                  return 15.99
                   break  
   }
 }
