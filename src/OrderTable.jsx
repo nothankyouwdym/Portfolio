@@ -14,14 +14,16 @@ let price = 0.00
 const OrderTable = (props) =>{
   const [totalPrice,setTotalPrice] = useState(0.00)
 
-
+  useEffect(() =>{
+    setTotalPrice(totalPrice+price)
+  },[price])
 
 
   return(
     <section>
       <table>
         <THead />
-        <TBody props={props} setTotalPrice={setTotalPrice} totalPrice={totalPrice}/>
+        <TBody props={props} setTotalPrice={setTotalPrice}/>
       </table>
       <button><Link to="/Ordered" id="link">Order</Link></button>
       <h1>{totalPrice}</h1>
@@ -29,12 +31,12 @@ const OrderTable = (props) =>{
   )
 }
 
-const TBody = (props,setTotalPrice,totalPrice) =>{
+const TBody = (props,setTotalPrice) =>{
      const rows = props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
-          <td>{setTotalPrice( totalPrice+getPrices(row))}</td>
+          <td>{price = getPrices(row)}</td>
         </tr>
       )
     })
