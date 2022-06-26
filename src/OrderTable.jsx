@@ -9,7 +9,7 @@ const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
 let price = 0.00
-let total = 0
+let total = 55
 
 
 
