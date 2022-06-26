@@ -8,8 +8,8 @@ const f = "Fries"
 const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
-let price = 0.00
-let total = 0.00
+let price = 0
+let total = 0
 
 
 
@@ -57,25 +57,25 @@ const THead = () =>{
 const getPrices = (row) =>{
   switch(row){
     case cn:
-      return 10.25
+      return 10
       break
       case ct:
-        return 5.99
+        return 5
         break
         case p:
-          return 9.95
+          return 9
           break
           case f:
-            return 9.99
+            return 9
             break
             case mss:
-              return 15.99
+              return 15
               break
               case hd:
-                return 8.25
+                return 8
                 break
                 case osf:
-                  return 15.99
+                  return 15
                   break  
   }
 }
