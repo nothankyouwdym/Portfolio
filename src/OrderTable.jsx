@@ -23,7 +23,7 @@ const OrderTable = (props) =>{
     <section>
       <table>
         <THead />
-        <TBody props={props} setTotalPrice={setTotalPrice}/>
+        <TBody props={props} setTotalPrice={setTotalPrice} totalPrice={totalPrice}/>
       </table>
       <button><Link to="/Ordered" id="link">Order</Link></button>
       <h1>{totalPrice}</h1>
@@ -31,12 +31,12 @@ const OrderTable = (props) =>{
   )
 }
 
-const TBody = (props,setTotalPrice) =>{
+const TBody = (props,setTotalPrice,totalPrice) =>{
      const rows = props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
-          <td>{price = getPrices(row)}</td>
+          <td>{setTotalPrice( totalPrice+getPrices(row))}</td>
         </tr>
       )
     })
