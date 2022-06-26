@@ -15,7 +15,7 @@ let total = 0.00
 
 const OrderTable = (props) =>{
   useEffect(() =>{
-    total = total + price
+    total =+ price
   },price)
 
 
