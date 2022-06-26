@@ -36,8 +36,7 @@ const TBody = (props,setTotalPrice) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
-          <td>{getPrices(row)}</td>
-          {price = getPrices(row)}
+          <td>{price = getPrices(row)}</td>
         </tr>
       )
     })
