@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-import {useEffect} from "react"
+import {useState} from "react"
 
 const cn = "Chicken Nuggets"
 const ct  = "Chicken Tenders"
@@ -8,35 +8,31 @@ const f = "Fries"
 const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
-let price = 0.00
-let total = 55
 
 
 
 const OrderTable = (props) =>{
-  useEffect(() =>{
-    total += price
-  },price)
+  const [totalPrice,setTotalPrice] = useState(0)
 
 
   return(
     <section>
       <table>
         <THead />
-        <TBody props={props}/>
+        <TBody props={props} setTotalPrice={setTotalPrice}/>
       </table>
       <button><Link to="/Ordered" id="link">Order</Link></button>
-      <h1>{total}</h1>
+      <h1>{totalPrice}</h1>
     </section>  
   )
 }
 
-const TBody = (props) =>{
+const TBody = (props,setTotalPrice) =>{
      const rows = props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
-          <td>{price = getPrices(row)}</td>
+          <td>{setTotalPrice(getPrices(row))}</td>
         </tr>
       )
     })
