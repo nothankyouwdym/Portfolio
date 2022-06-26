@@ -9,37 +9,32 @@ const mss = "Mariama Secret Special"
 const hd = "Hot Dogs"
 const osf = "Oumar Special Food"
 let price = 0.00
-
-
 const OrderTable = (props) =>{
-  const [totalPrice,setTotalPrice] = useState(0.00)
 
-  useEffect(() =>{
-    setTotalPrice(totalPrice+price)
-  },[price])
-
+ 
 
   return(
     <section>
       <table>
         <THead />
-        <TBody props={props} setTotalPrice={setTotalPrice}/>
+        <TBody props={props}/>
       </table>
       <button><Link to="/Ordered" id="link">Order</Link></button>
-      <h1>{totalPrice}</h1>
+      
     </section>  
   )
 }
 
-const TBody = (props,setTotalPrice) =>{
+const TBody = (props) =>{
      const rows = props.props.state.map((row,index) =>{
       return(
         <tr key={index}>
           <td>{row}</td>
-          <td>{price = getPrices(row)}</td>
+          <td>{getPrices(row)}</td>
         </tr>
       )
-    })
+    }
+  )
   return <tbody>{rows}</tbody>
 }
 
